@@ -19,7 +19,7 @@ export default defineConfig({
 
 ## Configuration
 
-The hash is generated with [the `crypto` module](https://nodejs.org/api/crypto.html) and can be configured as follows:
+The hash is generated with [the `crypto` module](https://nodejs.org/api/crypto.html) based on the file path and can be configured as follows:
 
 ```ts
 declare function prettyCssModules(opts?: {
