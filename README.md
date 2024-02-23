@@ -2,8 +2,8 @@
 
 Use prettier generated class names in development, while applying minification in production:
 
-- **Development**: `${filename}-${selectorName}-${uniqueHash}` (e.g. `TodoList-root-3a92`)
-- **Production**: `${uniqueHash}` (e.g. `c3a92`)
+- **Development**: `${filename}-${selectorName}-${shortUniqueHash}` (e.g. `TodoList-root-3a92`)
+- **Production**: `c${shortUniqueHash}` (e.g. `c3a92`)
 
 ## Usage
 
@@ -17,6 +17,8 @@ export default defineConfig({
 ```
 
 ## Configuration
+
+The hash is generated with [the `crypto` module](https://nodejs.org/api/crypto.html) and can be configured as follows:
 
 ```ts
 declare function prettyCssModules(opts?: {
