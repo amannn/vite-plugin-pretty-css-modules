@@ -9,6 +9,7 @@ Use prettier generated class names in development, while applying minification i
 
 ```ts
 // vite.config.ts
+import {defineConfig} from 'vite';
 import prettyCssModules from 'vite-plugin-pretty-css-modules';
 
 export default defineConfig({
