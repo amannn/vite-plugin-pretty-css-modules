@@ -2,15 +2,25 @@
   "name": "vite-plugin-pretty-css-modules",
   "version": "0.1.0",
   "description": "",
+  "type": "module",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "bunchee"
   },
   "keywords": [],
   "author": "Jan Amann",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.11.20",
+    "bunchee": "^4.4.8",
     "typescript": "^5.3.3",
     "vite": "^5.1.4"
   },

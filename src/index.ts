@@ -4,7 +4,7 @@ import {Plugin} from 'vite';
 export default function prettyCssModulesCssModules(opts?: {
   /** Defaults to `shake256`, see https://nodejs.org/api/crypto.html#cryptocreatehashalgorithm-options. */
   algorithm: string;
-  /** In bytes, defaults to `2` which equals 65,536 unique strings. */
+  /** In bytes, defaults to `2` (which equals 65,536 unique strings). */
   outputLength: number;
 }): Plugin {
   const algorithm = opts?.algorithm ?? 'shake256';

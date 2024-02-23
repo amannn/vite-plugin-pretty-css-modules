@@ -18,4 +18,13 @@ export default defineConfig({
 
 ## Configuration
 
-TODO
+```ts
+import {Plugin} from 'vite';
+
+declare function prettyCssModulesCssModules(opts?: {
+  /** Defaults to `shake256`, see https://nodejs.org/api/crypto.html#cryptocreatehashalgorithm-options. */
+  algorithm: string;
+  /** In bytes, defaults to `2` (which equals 65,536 unique strings). */
+  outputLength: number;
+}): Plugin;
+```
