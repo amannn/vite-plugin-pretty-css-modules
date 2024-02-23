@@ -1,15 +1,20 @@
 {
   "name": "vite-plugin-pretty-css-modules",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
+  "files": ["dist"],
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/es/index.mjs",
+  "module": "./dist/es/index.mjs",
+  "types": "./dist/es/index.d.ts",
   "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "require": "./dist/index.cjs",
-      "default": "./dist/index.js"
+    "import": {
+      "types": "./dist/es/index.d.ts",
+      "default": "./dist/es/index.mjs"
+    },
+    "require": {
+      "types": "./dist/cjs/index.d.cts",
+      "default": "./dist/cjs/index.cjs"
     }
   },
   "scripts": {
