@@ -1,7 +1,7 @@
 import crypto from 'crypto';
 import {Plugin} from 'vite';
 
-export default function prettyCssModulesCssModules(opts?: {
+export default function prettyCssModules(opts?: {
   /** Defaults to `shake256` (see https://nodejs.org/api/crypto.html#cryptocreatehashalgorithm-options) */
   algorithm?: string;
   /** In bytes, defaults to `2` (which equals 65,536 unique strings) */
@@ -15,7 +15,7 @@ export default function prettyCssModulesCssModules(opts?: {
   }
 
   return {
-    name: 'optimized-css-modules',
+    name: 'pretty-css-modules',
     config(config, env) {
       config.css ??= {};
 
