@@ -1,6 +1,6 @@
 # vite-plugin-pretty-css-modules
 
-Use prettier generated class names in development, while applying minification in production:
+Use pretty generated class names in development, while applying minification in production:
 
 - **Development**: `${filename}-${selectorName}-${shortUniqueHash}` (e.g. `TodoList-root-3a92`)
 - **Production**: `c${shortUniqueHash}` (e.g. `c3a92`)
