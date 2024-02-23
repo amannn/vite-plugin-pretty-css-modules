@@ -1,7 +1,7 @@
 {
   "name": "vite-plugin-pretty-css-modules",
   "version": "0.1.3",
-  "description": "",
+  "description": "Use prettier generated class names in development, while applying minification in production.",
   "files": ["dist"],
   "type": "module",
   "main": "./dist/es/index.mjs",
