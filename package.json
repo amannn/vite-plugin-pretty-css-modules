@@ -28,12 +28,12 @@
   "author": "Jan Amann",
   "license": "MIT",
   "devDependencies": {
-    "@types/node": "^22.13.1",
-    "bunchee": "^6.3.3",
-    "typescript": "^5.7.3",
-    "vite": "^6.1.0"
+    "@types/node": "^25.2.1",
+    "bunchee": "^6.9.4",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
   },
   "peerDependencies": {
-    "vite": "^6.1.0"
+    "vite": "^7.3.1"
   }
 }
